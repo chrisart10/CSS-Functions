@@ -1,0 +1,35 @@
+/* layout */
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px;
+    width: min(1000px, 70%);
+}
+
+/* style */
+.container {
+    background-color: floralwhite;
+}
+
+.card {
+    background-color: antiquewhite;
+    box-shadow: 0 12px 23px 2px rgb(150, 144, 144);
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+}
+
+h1 {
+    /* reference : https://css-tricks.com/snippets/css/fluid-typography/ */
+    /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    font-size: calc(20px + (42 - 20) * ((100vw - 300px) / (2200 - 300)));
+}
+
+p {
+    font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (2200 - 300)));
+}
