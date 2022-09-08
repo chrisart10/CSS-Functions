@@ -14,12 +14,12 @@
 
 /* style */
 .container {
-    background-color: floralwhite;
+    background:  linear-gradient(0, #E8DAC8,#9C8B76);
 }
 
 .card {
-    background-color: antiquewhite;
-    box-shadow: 0 12px 23px 2px rgb(150, 144, 144);
+    background-color: #faebd7;
+    box-shadow: 0 12px 23px 2px #69553B;
     border: 2px solid goldenrod;
     border-radius: 20px;
 }
