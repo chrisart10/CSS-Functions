@@ -9,7 +9,7 @@
 .card {
     padding: 20px;
     margin: 20px;
-    width: max(300px, 39%);
+    width: clamp(200px,70%, 1000px);
 }
 
 /* style */
