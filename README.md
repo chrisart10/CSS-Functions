@@ -1,5 +1,5 @@
 # Laboratory
-the purpose of this lab is to apply different [CSS Functions](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-css-functions), also use [CSS custom properties](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-custom-properties) to make responsive and elegant website.
+the purpose of this lab is to apply different [CSS Functions](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-css-functions), also use [CSS custom properties](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-custom-properties) to make a responsive and elegant website.
 
 ## Goal to achieve
 ![Goal to achieve](https://github.com/chrisart10/CSS-Functions/blob/main/light.png)
