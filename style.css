@@ -1,35 +1,100 @@
+/* custom properties */
+:root.light {
+
+    /* colors */
+    --container-linear-gradient-color: #E8DAC8, #9C8B76;
+    --card-box-shadow-color: #69553B;
+    --card-background-color: #faebd7;
+    --card-border-color: #daa520;
+    --h1-color: #ffffff;
+    --h2-color: #000000;
+    --h1-text-shadow-color: #000000;
+    --p-color: #000000;
+    --button-background-color: #695C4D;
+    --button-color: #EEEEEE;
+    --button-active-background-color: #E8CDAC;
+    --button-active-color: #000000;
+    --button-border-color: #daa520;
+}
+
+:root.dark {
+    /* colors */
+    --container-linear-gradient-color: #485569, #222831;
+    --card-box-shadow-color: #393E46;
+    --card-background-color: #354969;
+    --card-border-color: #daa520;
+    --h1-color: #daa520;
+    --h2-color: #ffffff;
+    --h1-text-shadow-color: #ffffff;
+    --p-color: #ffffff;
+    --button-background-color: #485569;
+    --button-color: #ffffff;
+    --button-active-background-color: #8FA8CF;
+    --button-active-color: #ffffff;
+    --button-border-color: #daa520;
+}
+
 /* layout */
-.container {
+
+.container,
+main {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
 
+button {
+    margin: 20px;
+    padding: 10px 20px;
+}
+
 .card {
     padding: 20px;
     margin: 20px;
-    width: clamp(200px,70%, 1000px);
+    width: clamp(200px, 70%, 1000px);
 }
 
 /* style */
 .container {
-    background:  linear-gradient(0, #E8DAC8,#9C8B76);
+    background: linear-gradient(0, var(--container-linear-gradient-color));
 }
 
 .card {
-    background-color: #faebd7;
-    box-shadow: 0 12px 23px 2px #69553B;
-    border: 2px solid #daa520;
+    background-color: var(--card-background-color);
+    box-shadow: 0 12px 23px 2px var(--card-box-shadow-color);
+    border: 2px solid var(--card-border-color);
     border-radius: 20px;
 }
 
 h1 {
     /* reference : https://css-tricks.com/snippets/css/fluid-typography/ */
     /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    font-size: calc(40px + (62 - 40) * ((100vw - 300px) / (2200 - 300)));
+    text-align: center;
+    color: var(--h1-color);
+    text-shadow: 2px 2px var(--h1-text-shadow-color);
+
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border: 2px solid var(--button-border-color);
+    border-radius: 20px;
+}
+
+button:active {
+    background-color: var(--button-active-background-color);
+    color: var(--button-active-color);
+}
+
+h2 {
     font-size: calc(20px + (42 - 20) * ((100vw - 300px) / (2200 - 300)));
+    color: var(--h2-color);
 }
 
 p {
     font-size: calc(12px + (26 - 12) * ((100vw - 300px) / (2200 - 300)));
+    color: var(--p-color);
 }
