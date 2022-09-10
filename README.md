@@ -4,7 +4,7 @@ the purpose of this lab is to apply different [CSS Functions](https://www.theodi
 ## Goal to achieve
 ![Goal to achieve](https://github.com/chrisart10/CSS-Functions/blob/main/light.png)
 ![Goal to achieve](https://github.com/chrisart10/CSS-Functions/blob/main/dark.png)
-- [website view]()
+[website view](https://chrisart10.github.io/CSS-Functions/)
 
 
 ## Roadmap
